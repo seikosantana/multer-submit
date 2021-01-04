@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Success</title>
+    <style>
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>Your cases are submitted successfully.</p>
+    <p>Redirecting you back to submission page in <span id="seconds">5</span> seconds.</p>
+    <script>
+        let seconds = 5;
+        let secondsEl = document.querySelector("#seconds");
+        let interval = setInterval(function() {
+            seconds -= 1;
+            secondsEl.innerText = seconds;
+            if (seconds === 0) {
+                clearInterval(interval);
+                history.back();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.submission-form {
+    margin-top: 40px;
+}
+
+.card-bottom .btn {
+    margin-left: 8px;
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+form .card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow-x: hidden;
+}
+
+form img {
+    object-fit: scale-down;
+}
