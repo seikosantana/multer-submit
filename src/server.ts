@@ -35,8 +35,6 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-type fileOrCallback = Express.Multer.File | ((Express.Multer.File));
-
 app.post("/submit", createUpload().any(), (req: express.Request, res: express.Response) => {
     let files = req.files;
     let descs = req.body;
